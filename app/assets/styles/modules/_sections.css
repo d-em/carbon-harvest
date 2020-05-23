@@ -19,14 +19,43 @@
     }
   }
 
-  &__intro {
+  .intro {
     font-size: 2rem;
     line-height: 2.2rem;
-    color: #fff;
 
     @mixin atSmall {
       font-size: 2.7rem;
       line-height: 3rem;
     }
+
+    &__hero {
+      color: #fff;
+    }
+
+    &__overview {
+      color: #000;
+    }
+
+    &__benefits {
+      color: $brand-primary;
+    }
   }
+}
+
+#overview {
+  h2, h3 {
+    color: $brand-primary;
+  }
+}
+
+#benefits {
+  .wrapper {
+    max-width: 1110px;
+  }
+}
+
+.benefits__title {
+  font-size: 1.8rem;
+  font-weight: 400;;
+  color: #000;
 }
