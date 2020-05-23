@@ -1,0 +1,9 @@
+section {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+
+  @mixin atSmall {
+    padding-left: 2rem;
+    padding-right: 2rem;      
+  }
+}
