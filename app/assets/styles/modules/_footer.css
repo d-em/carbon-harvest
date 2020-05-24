@@ -1,0 +1,8 @@
+footer {
+  background: linear-gradient($brand-secondary, $brand-primary);
+}
+
+.footer-logo {
+  max-width: 17rem;
+  mix-blend-mode: hard-light;
+}
