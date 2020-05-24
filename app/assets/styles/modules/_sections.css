@@ -43,6 +43,8 @@
 }
 
 #overview {
+  background: linear-gradient($mid-grey 0%, $light-grey 20%, $light-grey 80%);
+  min-height: 100vh;;
   h2, h3 {
     color: $brand-primary;
   }
@@ -58,4 +60,8 @@
   font-size: 1.8rem;
   font-weight: 400;;
   color: #000;
+}
+
+#about-us {
+  min-height: 100vh;
 }
