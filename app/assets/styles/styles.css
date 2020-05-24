@@ -3,10 +3,11 @@
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_typography';
-@import 'modules/_header.css';
+@import 'modules/_header';
 @import 'modules/_sections';
 @import 'modules/_btn';
 @import 'modules/_wrapper';
 @import 'modules/_grid';
 @import 'modules/_icons';
-@import 'modules/_footer.css';
+@import 'modules/_footer';
+@import 'modules/_primary-nav';

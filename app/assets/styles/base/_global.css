@@ -5,6 +5,10 @@ body {
   text-align: center;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -22,10 +26,10 @@ img {
 #overview,
 #benefits,
 #about-us,
-#contact-us,
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }

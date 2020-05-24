@@ -1,0 +1,29 @@
+.primary-nav {
+  display: none;
+  
+  &__nav-links {
+    list-style: none;
+    font-size: 1.4rem;
+  }
+
+  &__nav-links li {
+    display: inline-block;
+    padding: 0 1rem;
+  }
+
+  &__nav-links li a {
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+
+  &__nav-links li a:hover {
+    color: green;
+  }
+
+  @mixin atMedium {
+    display: block;
+  }
+}
