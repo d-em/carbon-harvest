@@ -5,7 +5,6 @@
   .image-bt-logo {
     max-width: 40rem;
     padding-bottom: 3rem;
-    mix-blend-mode: multiply;
 
     @mixin atSmall {
       max-width: 45rem;

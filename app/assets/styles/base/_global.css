@@ -11,6 +11,11 @@ body {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -19,8 +24,12 @@ img {
 }
 
 .container {
-  max-width: 73rem;
+  max-width: 76rem;
   text-align: center;
+  
+  @mixin atMedium {
+    max-width: 850px;
+  }
 }
 
 #overview,
