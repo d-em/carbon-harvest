@@ -1,6 +1,5 @@
 .primary-nav {
-  display: none;
-  
+
   &__nav-links {
     list-style: none;
     font-size: 1.4rem;

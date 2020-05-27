@@ -1,15 +1,43 @@
 .site-header {
   position: absolute;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0;
 
   &__menu-icon {
-    width: 3rem;
-    height: 3rem;
-    background-color: wheat;
+    width: 2.6rem;
+    height: 2.6rem;
     position: absolute;
-    top: 2rem;
+    z-index: 10;
     right: 2rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2.6rem;
+      height: 0.3rem;
+      background-color: #fff ;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 1.2rem;
+      left: 0;
+      width: 2.6rem;
+      height: 0.3rem;
+      background-color: #fff;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 2.6rem;
+      height: 0.3rem;
+      background-color: #fff;
+    }
 
     @mixin atMedium {
       display: none;
@@ -18,13 +46,17 @@
 
   &__menu-content {
     display: none;
+    padding-top: 100px;
+    text-align: center;
 
     @mixin atMedium {
       display: block;
+      padding-top: 0;
     }
     
     &--visible {
     display: block;
+    transition: 0.5s;
     }
   }
 }
