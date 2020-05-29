@@ -1,0 +1,109 @@
+body {
+  font-family: 'Varela Round', sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+	padding: 0;
+}
+
+.container {
+	max-width: 76rem;
+  text-align: center;
+  padding: 30px;
+}
+
+.hero {
+	background: linear-gradient(#8cc63f 50%, #8cc63f, #5a8029);
+	height: 100vh;
+}
+
+.hero .image-bt-logo {
+	max-width: 30rem;
+  padding-bottom: 3rem;
+  
+  @media (min-width 530px) {
+    max-width: 10rem;
+  }
+}
+
+.hero__text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.hero__title {
+	font-size: 2.2rem;
+	color: #000;
+}
+
+.intro {
+	font-size: 1.8rem;
+	line-height: 2.3rem;
+}
+
+.intro__hero {
+	color: #fff;
+}
+
+.intro__overview {
+	color: #000;
+}
+
+.intro__benefits, .intro__about-us {
+	color: #8cc63f;
+}
+
+.intro__contact-us {
+	color: #000;
+	font-size: 1.6rem;
+}
+
+#overview {
+	background: linear-gradient(#ccc 5%, #f5f5f5 30%, #f5f5f5);
+}
+
+#overview h2, #overview h3 {
+	color: #8cc63f;
+}
+
+#benefits .wrapper {
+	max-width: 1110px;
+}
+
+#about-us {
+	background-color: #f5f5f5;
+}
+
+#contact-us h2 {
+	font-size: 1.8rem;
+	color: white;
+}
+
+.benefits__title {
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: #000;
+}
+
+.soon {
+  font-size: 20px;
+  margin-top: 40px;
+  text-transform: uppercase;
+}

@@ -15,4 +15,17 @@
     border: 2px solid #fff;
     text-shadow: 0 0.1rem rgba(0, 0, 0, 0.3);
   }
+
+  &--submit {
+    background: linear-gradient($light-grey, $mid-grey);
+    color: $brand-secondary;
+    border: 2px solid $brand-primary;
+    text-shadow: 0 0.1rem rgba(0, 0, 0, 0.3);
+    padding: 1.6rem 3rem;
+  }
+}
+
+.link__arrow {
+  height: 5rem;
+  padding-top: 2rem;
 }

@@ -1,8 +1,17 @@
 footer {
   background: linear-gradient($brand-secondary, $brand-primary);
+
+  p {
+    font-size: 1.4rem;
+  }
 }
 
 .footer-logo {
   max-width: 17rem;
   mix-blend-mode: hard-light;
+  padding-bottom: 4rem;
+}
+
+.link--footer {
+  color: black;
 }

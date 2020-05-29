@@ -1,50 +1,73 @@
 .hero {
-  background-color: $brand-primary;
+  background: linear-gradient($brand-primary 60%, $brand-primary, $brand-secondary);
   height: 100vh;
+
+  .image-bt-logo {
+    max-width: 40rem;
+    padding-bottom: 3rem;
+
+    @mixin atSmall {
+      max-width: 45rem;
+    }
+  }
 
   &__text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80%;
+    height: 100%;
+    margin-top: 4rem;
   }
 
   &__title {
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: #000;
 
     @mixin atSmall {
       font-size: 3.6rem;
+      margin-top: 2rem;
     }
   }
+}
 
-  .intro {
-    font-size: 2rem;
-    line-height: 2.2rem;
+.intro {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+
+  &__hero {
+    color: #fff;
+  }
+
+  &__overview {
+    color: #000;
+  }
+
+  &__benefits,
+  &__about-us {
+    color: $brand-primary;
+  }
+
+  @mixin atSmall {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+
+  &__contact-us {
+    color: #000;
+    font-size: 1.6rem;
 
     @mixin atSmall {
-      font-size: 2.7rem;
-      line-height: 3rem;
-    }
-
-    &__hero {
-      color: #fff;
-    }
-
-    &__overview {
-      color: #000;
-    }
-
-    &__benefits {
-      color: $brand-primary;
+      font-size: 2.1rem;
+      line-height: 2.6rem;
     }
   }
 }
 
 #overview {
   background: linear-gradient($mid-grey 0%, $light-grey 20%, $light-grey 80%);
-  min-height: 100vh;;
+  min-height: 100vh;
+
   h2, h3 {
     color: $brand-primary;
   }
@@ -54,6 +77,22 @@
   .wrapper {
     max-width: 1110px;
   }
+}
+
+#about-us {
+  background-color: $light-grey;
+  padding-top: 10rem;
+}
+
+#contact-us {
+  & h2 {
+    font-size: 1.8rem;
+    color: white;
+
+    @mixin atSmall {
+        font-size: 2.8rem;
+      }
+    }
 }
 
 .benefits__title {

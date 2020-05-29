@@ -5,8 +5,17 @@ body {
   text-align: center;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -15,17 +24,41 @@ img {
 }
 
 .container {
-  max-width: 73rem;
+  max-width: 76rem;
   text-align: center;
+  
+  @mixin atMedium {
+    max-width: 850px;
+  }
 }
 
 #overview,
 #benefits,
 #about-us,
-#contact-us,
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+}
+
+.pt {
+  &-2 {
+    padding-top: 2rem;
+  }
+
+  &-3 {
+    padding-top: 3rem;
+  }
+}
+
+.pb {
+  &-2 {
+    padding-bottom: 2rem;
+  }
+
+  &-3 {
+    padding-bottom: 3rem;
+  }
 }

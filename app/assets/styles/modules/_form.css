@@ -1,0 +1,20 @@
+.contact-form {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4rem 0;
+
+  &__input {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    border: 0;
+    background-color: $light-grey;
+  }
+}
+
+.border-customized-input {
+  border: 2px solid red;
+}
