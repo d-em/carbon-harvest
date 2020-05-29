@@ -4,22 +4,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
   <title>BiotronTower by Carbon Harvest</title>
-  <meta name="keywords" content="Biotron Tower, BiotronTower, Carbon Harvest, ">
+  <meta name="keywords" content="Biotron Tower, BiotronTower, Carbon Harvest, algal biomass, algae, algae biomass, biofuels, green business nz">
   <meta name="description" content="The BiotronTower&trade; from Carbon Harvest - turn your waste emissions into biomass.">
   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/669278/7830412/css/fonts.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="nav-wrapper">
+    <div class="wrapper">
 
-      <img src="assets/images/logos/logo-ch-header.svg" class="logo">
+        <img src="assets/images/logos/logo-ch-header.svg" class="logo">
+
 
       <div class="site-header__menu-icon">
         <div class="site-header__menu-icon__middle"></div>
       </div>
 
       <div class="site-header__menu-content">
-          <nav class="primary-nav">
+          <nav class="primary-nav primary-nav--pull-right">
             <ul class="primary-nav__nav-links">
               <li><a href="#overview">How it works</a></li>
               <li><a href="#benefits">Benefits</a></li>
@@ -66,7 +67,8 @@
         </svg>
         <h1 class="hero__title">Introducing BiotronTower&trade;</h1>
         <p class="intro intro__hero">The BiotronTower&trade; from Carbon Harvest is a unique, bolt-on, addition to your flue-gas emission source that literally turns your waste emissions into environmentally friendly, saleable biomass.</p>
-        <p class="link link__arrow"><a href="#overview">&darr;</a></p>
+        <a href="#overview"><img src="assets/images/arrow-white.svg" alt="Next Section" class="link__arrow"></a>
+        
       </div>
     </div>
   </section>
@@ -80,7 +82,7 @@
       <p>Land and water requirements are minimal meaning that the BiotronTower&trade; can be situated close to the emission source as a scalable, standalone bio-refinery that operates reliably 24 hours a day, 7 days a week all year round.</p>
       <p>Current estimates indicate that two tonnes of CO&#8322; flue emissions will produce 1.83 tonne of saleable dry biomass. Production at this rate will lock up <strong>0.5 tonnes of carbon</strong> whilst releasing <strong>1 tonne of oxygen</strong> into the atmosphere – greatly enhancing your corporate social responsibility.</p>
       <p>That&rsquo;s a lot of algae right? Algae is pretty useful stuff though – see how it&rsquo;s used&hellip;</p>
-      <p><a href="#benefits">Next section</a></p>
+      <a href="#benefits"><img src="assets/images/arrow-green.svg" alt="Next Section" class="link__arrow"></a>
     </div>
   </section>
 
@@ -132,10 +134,22 @@
     <div class="container">
       <p>In the EU it is estimated that the algae biomass industry is valued at around &euro;1.69bn and employs 14,000 people in R&amp;D and the supply chain. That&rsquo;s big green business!</p>
       <h3>Sound interesting?</h3>
-      <p>Get in touch with us to find out more about this exciting new development in green agro-science and we&rsquo;ll keep you up to date with out progress.</p>
-      <p><a href="#" class="btn btn--green">Get in touch</a></p>
+      <p>Get in touch with us to find out more about this exciting new development in green agro-science and we&rsquo;ll keep you up to date with our progress.</p>
+      <p class="pt-2"><a href="#contact-us" class="btn btn--green">Get in touch</a></p>
     </div>
   </section>
+
+ <div class="section-divider">
+  <div class="section-divider__benefits">
+    <img src="assets/images/backgrounds/divider-lines.svg">
+  </div>
+</div>
+
+  <!-- <div class="main-content">
+    <div id="header-waves">
+      <img src="https://placehold.it/6000x300" alt="">
+    </div>
+  </div> -->
 
   <section id="about-us">
     <div class="container">
@@ -144,25 +158,7 @@
       <p>So - we&rsquo;ve been at this for a long time&hellip;</p>
       <p>The BiotronTower&trade; Technology is the culmination of this research and is configured as a high technology, precision controlled, ultra-high productivity system designed by applying advanced science, engineering, processing and marketing principles designed to provide industrial scale biomass production at commercially acceptable Return-on-Investment.</p>
       <p>The focus of Carbon Harvest Ltd is to continue with its R&amp;D program for the development of algal biomass based high value products, the continued development of BiotronTower&trade; systems, and algae species culture maintenance, in support of the provision of consultancy technology services to industrial users.</p>
-      <h3>Meet the team</h3>
-  
-      <img src="#" alt="#" srcset="#">
-      <h3>John Smith</h3>
-      <h3>Title</h3>
-  
-      <img src="#" alt="#" srcset="#">
-      <h3>John Smith</h3>
-      <h3>Title</h3>
-  
-      <img src="#" alt="#" srcset="#">
-      <h3>John Smith</h3>
-      <h3>Title</h3>
-  
-      <img src="#" alt="#" srcset="#">
-      <h3>John Smith</h3>
-      <h3>Title</h3>
-  
-      <p><a href="#" class="btn btn--green">Get in touch</a></p>
+      <p class="pt-2"><a href="#contact-us" class="btn btn--green">Get in touch</a></p>
     </div>
   </section>
 
@@ -171,35 +167,21 @@
       <div class="container">
         <h2>Want to know more?</h2>
         <p class="intro intro__contact-us">If you&rsquo;d like us to keep you informed about our progress or want to have a chat about what we&rsquo;re doing and how we can help you meet your emission and corporate social responsibility requirements &ndash; just leave your details below. </p>
-        <form action=""></form>
-        <p><a href="#" class="btn btn--submit">Submit</a></p>
+        <form class="contact-form" class="contact-form__input" action="contactform.php" method="POST">
+          <input type="text" class="contact-form__input" name="name" placeholder="Full name">
+          <input type="text" class="contact-form__input" name="email" placeholder="Your e-mail">
+          <input type="text" class="contact-form__input" name="subject" placeholder="Subject">
+          <textarea name="message" class="contact-form__input" placeholder="Message"></textarea>
+          <button type="submit" name="submit" class="btn btn--submit">Submit</button>
+        </form>
       </div>
     </section>
     <img src="assets/images/logos/logo-cd-footer.svg" alt="Logo" class="footer-logo">
     <p>30 Kimbolton Road, Feilding, New Zealand.</p>
     <p><a>info@carbonharvest.co.nz</a></p>
-    <p>+64 21 743 929</p>
-    <p>Copyright &copy; 2020 Carbon Harvest Ltd. All rights reserved.</p>
+    <p><a href="tel:006421358943" class="link--footer">+64 21 743 929</a></p>
+    <p class="pb-3">Copyright &copy; 2020 Carbon Harvest Ltd. All rights reserved.</p>
   </footer>
-
   <script src="bundled.js"></script>
-  <!-- Leave this commented out HTML here until you need it for an upcoming "modal" lesson
-  <div class="modal">
-    <div class="modal__inner">
-      <h2 class="section-title section-title--blue section-title--less-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Get in <strong>Touch</strong></h2>
-      <div class="wrapper wrapper--narrow">
-        <p class="modal__description">We will have an online order system in place soon. Until then, connect with us on any of the platforms below!</p>
-      </div>
-
-      <div class="social-icons">
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/youtube.svg" alt="YouTube"></a>
-      </div>
-    </div>
-    <div class="modal__close">X</div>
-  </div>
-  This is the end of the "modal" reference HTML -->
 </body>
 </html>

@@ -1,0 +1,27 @@
+.section-divider {
+
+  &__benefits {
+  overflow: hidden;
+  min-height: 240px;
+  transform: translateY(45%);
+  margin-top: -125px;
+  display: flex;
+  justify-content: center;
+
+  & img {
+    object-fit: cover;
+    width: 100% !important;
+  }
+  }
+}
+
+#header-waves {
+  min-height: 240px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  & img {
+    object-fit: cover;
+  }
+}

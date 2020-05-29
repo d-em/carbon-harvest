@@ -11,3 +11,7 @@ footer {
   mix-blend-mode: hard-light;
   padding-bottom: 4rem;
 }
+
+.link--footer {
+  color: black;
+}

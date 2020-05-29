@@ -5,6 +5,7 @@ section {
     padding-left: 2rem;
     padding-right: 2rem;      
   }
+
 }
 
 .wrapper {
@@ -15,8 +16,10 @@ section {
   margin-left: auto;
   margin-right: auto;
 
-  &--medium {
-    max-width: 976px;
+  @mixin atMedium {
+    
+  } {
+    max-width: 960px;
   }
 
   .wrapper {

@@ -1,30 +1,35 @@
 .site-header {
   position: absolute;
   width: 100%;
-  padding: 0;
+  padding-top: 2rem;
+
+  &--expanded {
+    background-color: rgba($brand-secondary, 0.8);
+  }
 
   &__menu-icon {
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 2.2rem;
+    height: 1.9rem;
     position: absolute;
     z-index: 10;
-    right: 2rem;
+    right: 3rem;
+    top: 28px;
 
     &::before {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 2.6rem;
+      width: 2.2rem;
       height: 0.3rem;
       background-color: #fff ;
     }
 
     &__middle {
       position: absolute;
-      top: 1.2rem;
+      top: 0.8rem;
       left: 0;
-      width: 2.6rem;
+      width: 2.2rem;
       height: 0.3rem;
       background-color: #fff;
     }
@@ -34,19 +39,20 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 2.6rem;
+      width: 2.2rem;
       height: 0.3rem;
       background-color: #fff;
     }
 
     @mixin atMedium {
       display: none;
+      padding-top: 3rem;
     }
   }
 
   &__menu-content {
     display: none;
-    padding-top: 100px;
+    padding-top: 6rem;
     text-align: center;
 
     @mixin atMedium {
@@ -56,31 +62,15 @@
     
     &--visible {
     display: block;
-    transition: 0.5s;
+    padding-bottom: 5rem;
     }
   }
 }
 
-.nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  padding: 4rem;
-
-  @mixin atMedium {
-    max-width: 900px;
-  }
-
-  @mixin atLarge {
-    max-width: 1100px;
-  }
-}
-
 .logo {
-  max-width: 20rem;
+  float: left;
+  max-width: 18rem;
   mix-blend-mode: multiply;
-  cursor: pointer;
 
   @mixin atSmall {
     max-width: 24rem;

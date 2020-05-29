@@ -42,3 +42,23 @@ footer {
   align-items: center;
   min-height: 100vh;
 }
+
+.pt {
+  &-2 {
+    padding-top: 2rem;
+  }
+
+  &-3 {
+    padding-top: 3rem;
+  }
+}
+
+.pb {
+  &-2 {
+    padding-bottom: 2rem;
+  }
+
+  &-3 {
+    padding-bottom: 3rem;
+  }
+}

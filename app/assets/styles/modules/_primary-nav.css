@@ -1,13 +1,25 @@
 .primary-nav {
+  
+  &--pull-right {
+  }
+
+  @mixin atMedium {
+    float: right;
+  }
 
   &__nav-links {
     list-style: none;
     font-size: 1.4rem;
+    padding-left: 0;
   }
 
   &__nav-links li {
-    display: inline-block;
-    padding: 0 1rem;
+    display: list-item;
+    padding: 1rem 1rem;
+
+    @mixin atSmall {
+      display: inline-block;
+    }
   }
 
   &__nav-links li a {
